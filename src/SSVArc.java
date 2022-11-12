@@ -19,7 +19,6 @@ public class SSVArc {
         countBytesInFile = fileStream != null ? fileStream.available() : 0;
     }
 
-
     public void compress() throws IOException {
         byte[] partOfContent = fileStream.readNBytes( 55 );
         System.out.println( Arrays.toString( partOfContent ) );
